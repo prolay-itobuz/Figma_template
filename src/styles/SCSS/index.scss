@@ -1,0 +1,190 @@
+@import "var";
+@import "mixing";
+
+* {
+  padding: 0%;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Work Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+nav{
+    height: 80px;
+    display: flex;
+    position: relative;
+    width: 100%;
+    background-color: $primary-dark;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 3%;
+    div.logo{
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        img{
+            display: block;
+            width: 28px;
+            height: 37.5px;
+        }
+        h1{
+            font-size: 20px;
+            font-weight: 700;
+            color: $primary;
+        }
+    }
+    label{
+        aspect-ratio: 1;
+        width: 20px;
+        i{
+            width: 100%;
+        }
+    }
+    input[type="checkbox"]{
+        display: none;
+    }
+
+    ul{
+        position: absolute;
+        display: none;
+        z-index: 20;
+        background-color: rgb(116, 127, 229);
+        top: 100%;
+        left: 0;
+        list-style: none;
+        width: 100%;
+        li{
+            padding: 1%;
+            text-align: center;
+            border-bottom: 1px solid #ccc9c9;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+        }
+    }
+    ul:last-child{
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+        }
+
+    input[type="checkbox"]:checked ~ ul{
+        display: block;
+    }
+}
+
+header{
+    position: relative;
+    img{
+        width: 100%;
+        object-fit: contain;
+    }
+    div.hero{
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        padding: 2%;
+        top: 10px;
+        h2{
+            font-weight: 600;
+        }
+        div.popup{
+            background-color: $secondary;
+            width: 70%;
+            display: flex;
+            flex-direction: column;
+            color: $w;
+            gap: 4%;
+            padding-bottom: 0;
+            text-align: center;
+            h3{
+                font-weight: 700;
+                font-size: 14px;
+                padding: 4%;
+                padding-bottom: 1%;
+            }
+            p{
+                font-size: 12px;
+                padding: 3%;
+            }
+            div.buttons{
+                width: 100%;
+                display: flex;
+                button{
+                    width: 100%;
+                    background-color: #292e3d;
+                    color: $w;
+                    border: none;
+                    padding: 2%;
+                }
+                button:first-child{
+                    border-right: 1px solid #c9ccd7;
+                }
+            }
+        }
+    }
+}
+
+section.reputation{
+    margin: 30px auto;
+    h2{
+        font-weight: 700;
+        text-align: center;
+        margin-bottom: 5%;
+    }
+    div.container{
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        div.card{
+            width: 80%;
+            border-radius: 3px;
+            margin: auto;
+            padding: 3%;
+            border: 1px solid #ccc9c9;
+            img{
+                width: 25px;
+                aspect-ratio: 1;
+            }
+            h3{
+                font-weight: 700;
+                font-size: 15px;
+            }
+            p{
+                color: #858ead;
+            }
+        }
+    }
+}
+
+section.image{
+    width: 95%;
+    margin: auto;
+    position: relative;
+    img{
+        width: 100%;
+    }
+    div.about{
+        background-color: $primary;
+        padding: 6%;
+        color: $w;
+        position: absolute;
+        h3{
+            font-weight: 700;
+            margin-bottom: 3%;
+            font-size: 16px;
+        }
+        p{
+            font-size: 12px;
+            margin-bottom: 3%;
+        }
+        button{
+            background-color: $w;
+            color: $primary;
+            padding: 2%;
+            border: none;
+            outline: none;
+            border-radius: 3px;
+        }
+    }
+}
