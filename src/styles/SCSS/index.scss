@@ -11,180 +11,288 @@
   font-style: normal;
 }
 
-nav{
-    height: 80px;
+nav {
+  display: flex;
+  flex-direction: row;
+  height: 80px;
+  position: relative;
+  width: 100%;
+  background-color: $primary-dark;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 3%;
+  div.logo {
     display: flex;
-    position: relative;
-    width: 100%;
-    background-color: $primary-dark;
     align-items: center;
-    justify-content: space-between;
-    padding: 0 3%;
-    div.logo{
-        display: flex;
-        align-items: center;
-        gap: 8px;
-        img{
-            display: block;
-            width: 28px;
-            height: 37.5px;
-        }
-        h1{
-            font-size: 20px;
-            font-weight: 700;
-            color: $primary;
-        }
+    gap: 8px;
+    img {
+      display: block;
+      width: 28px;
+      height: 37.5px;
     }
-    label{
-        aspect-ratio: 1;
-        width: 20px;
-        i{
-            width: 100%;
-        }
+    h1 {
+      font-size: 20px;
+      font-weight: 700;
+      color: $primary;
     }
-    input[type="checkbox"]{
-        display: none;
+  }
+  label {
+    display: none;
+  }
+  input[type="checkbox"] {
+    display: none;
+  }
+  ul {
+    display: flex;
+    list-style: none;
+    position: static;
+    background-color: transparent;
+    gap: 3%;
+    width: 35vw;
+    justify-content: space-evenly;
+    li {
+      border: none;
     }
-
-    ul{
-        position: absolute;
-        display: none;
-        z-index: 20;
-        background-color: rgb(116, 127, 229);
-        top: 100%;
-        left: 0;
-        list-style: none;
-        width: 100%;
-        li{
-            padding: 1%;
-            text-align: center;
-            border-bottom: 1px solid #ccc9c9;
-            border-bottom-left-radius: 10px;
-            border-bottom-right-radius: 10px;
-        }
+    li:last-child {
+      color: $btn-color;
+      font-weight: 600;
     }
-    ul:last-child{
-            border-bottom-left-radius: 10px;
-            border-bottom-right-radius: 10px;
-        }
-
-    input[type="checkbox"]:checked ~ ul{
-        display: block;
-    }
+  }
 }
-
-header{
-    position: relative;
-    img{
-        width: 100%;
-        object-fit: contain;
+@media (max-width: 1100px) {
+  nav {
+    ul {
+      width: 50vw;
     }
-    div.hero{
-        position: absolute;
-        display: flex;
-        flex-direction: column;
-        padding: 2%;
-        top: 10px;
-        h2{
-            font-weight: 600;
-        }
-        div.popup{
-            background-color: $secondary;
-            width: 70%;
-            display: flex;
-            flex-direction: column;
-            color: $w;
-            gap: 4%;
-            padding-bottom: 0;
-            text-align: center;
-            h3{
-                font-weight: 700;
-                font-size: 14px;
-                padding: 4%;
-                padding-bottom: 1%;
-            }
-            p{
-                font-size: 12px;
-                padding: 3%;
-            }
-            div.buttons{
-                width: 100%;
-                display: flex;
-                button{
-                    width: 100%;
-                    background-color: #292e3d;
-                    color: $w;
-                    border: none;
-                    padding: 2%;
-                }
-                button:first-child{
-                    border-right: 1px solid #c9ccd7;
-                }
-            }
-        }
-    }
+  }
 }
+@media (max-width: 768px) {
+  nav {
+    label {
+      aspect-ratio: 1;
+      width: 20px;
+      i {
+        width: 100%;
+      }
+    }
 
-section.reputation{
-    margin: 30px auto;
-    h2{
-        font-weight: 700;
+    ul {
+      position: absolute;
+      display: none;
+      z-index: 20;
+      background-color: rgb(116, 127, 229);
+      top: 100%;
+      left: 0;
+      list-style: none;
+      width: 100%;
+      li {
+        padding: 1%;
         text-align: center;
-        margin-bottom: 5%;
+        border-bottom: 1px solid #ccc9c9;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+      }
     }
-    div.container{
-        display: flex;
-        flex-direction: column;
-        gap: 25px;
-        div.card{
-            width: 80%;
-            border-radius: 3px;
-            margin: auto;
-            padding: 3%;
-            border: 1px solid #ccc9c9;
-            img{
-                width: 25px;
-                aspect-ratio: 1;
-            }
-            h3{
-                font-weight: 700;
-                font-size: 15px;
-            }
-            p{
-                color: #858ead;
-            }
-        }
+    ul:last-child {
+      border-bottom-left-radius: 10px;
+      border-bottom-right-radius: 10px;
     }
+
+    input[type="checkbox"]:checked ~ ul {
+      display: block;
+    }
+    label {
+      display: block;
+    }
+  }
 }
 
-section.image{
-    width: 95%;
-    margin: auto;
-    position: relative;
-    img{
-        width: 100%;
+header {
+  background: url(../../assests/Images/background/Hero.jpg);
+  height: 40rem;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  display: flex;
+  margin: auto;
+  h2 {
+    color: $text-color;
+    font-weight: 600;
+    font-size: 4rem;
+    align-self: center;
+    width: 45%;
+    margin-left: 10%;
+  }
+  div.popup {
+    background-color: $secondary;
+    width: 20%;
+    align-self: flex-end;
+    color: $w;
+    margin-left: 15%;
+    text-align: center;
+    h3 {
+      font-weight: 700;
+      padding: 5% 0 2% 0;
+      font-size: 14px;
     }
-    div.about{
-        background-color: $primary;
-        padding: 6%;
+    p {
+      padding: 3%;
+      font-size: 15px;
+      margin-bottom: 5%;
+    }
+    div.buttons {
+      width: 100%;
+      display: flex;
+      button {
+        width: 100%;
+        background-color: $text-color;
         color: $w;
-        position: absolute;
+        padding: 1%;
+        border: none;
+        outline: none;
+      }
+      button:first-child {
+        border-right: 1px solid $w;
+      }
+    }
+  }
+}
+
+@media (max-width: 990px) {
+  header {
+    height: 30rem;
+    flex-direction: column;
+    h2 {
+        width: 80%;
+        margin: auto;
+    }
+    div.popup{
+        width: 40%;
+        align-self: center;
         h3{
-            font-weight: 700;
-            margin-bottom: 3%;
-            font-size: 16px;
+            padding: 3% 2%;
         }
         p{
-            font-size: 12px;
-            margin-bottom: 3%;
-        }
-        button{
-            background-color: $w;
-            color: $primary;
-            padding: 2%;
-            border: none;
-            outline: none;
-            border-radius: 3px;
+            padding: 1% 2%;
         }
     }
+  }
+}
+
+@media (max-width: 678px) {
+  header {
+    height: 20rem;
+    h2{
+        font-size: 2.5rem;
+    }
+    div.popup{
+        width: 70%;
+        align-self: center;
+        h3{
+            padding: 3% 2%;
+        }
+        p{
+            padding: 1% 2%;
+        }
+    }
+  }
+}
+
+section.reputation {
+  margin: 5% auto;
+  h2 {
+    font-weight: 700;
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 2%;
+    color: $text-color;
+    border: 1ps solid #000000;
+    text-shadow: 0px 4px 4px #00000040;
+  }
+  div.container {
+    display: flex;
+    justify-content: center;
+    width: 95%;
+    margin: auto;
+    gap: 5%;
+    div.card {
+      width: 18rem;
+      border-radius: 3px;
+      color: $text-color;
+      padding: 1%;
+      border: 1px solid #ccc9c9;
+      img {
+        width: 25px;
+        aspect-ratio: 1;
+      }
+      h3 {
+        font-weight: 700;
+        font-size: 15px;
+      }
+      p {
+        color: #858ead;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  section.reputation {
+    div.container {
+      flex-direction: column;
+      div.card {
+        margin: 1% auto;
+        padding: 2%;
+        width: 60%;
+      }
+    }
+  }
+}
+
+@media (max-width: 468px) {
+  section.reputation {
+    margin: 10% auto;
+    div.container {
+      div.card {
+        padding: 3%;
+        width: 90%;
+        margin: 2% auto;
+      }
+    }
+  }
+}
+
+
+
+
+section.image {
+  width: 95%;
+  margin: auto;
+  position: relative;
+  img {
+    width: 100%;
+  }
+  div.about {
+    background-color: $primary;
+    padding: 6%;
+    color: $w;
+    position: absolute;
+    h3 {
+      font-weight: 700;
+      margin-bottom: 3%;
+      font-size: 16px;
+    }
+    p {
+      font-size: 12px;
+      margin-bottom: 3%;
+    }
+    button {
+      background-color: $w;
+      color: $primary;
+      padding: 2%;
+      border: none;
+      outline: none;
+      border-radius: 3px;
+    }
+  }
 }
