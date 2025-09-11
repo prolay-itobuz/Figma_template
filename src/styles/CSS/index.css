@@ -2,6 +2,9 @@
   padding: 0%;
   margin: 0;
   box-sizing: border-box;
+}
+
+body {
   font-family: "Work Sans", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
@@ -246,35 +249,199 @@ section.reputation div.container div.card p {
   }
 }
 section.image {
-  width: 95%;
-  margin: auto;
+  background: url(../../assests/Images/background/person.svg);
+  width: 60%;
+  height: 30rem;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  margin-left: 10%;
   position: relative;
 }
-section.image img {
-  width: 100%;
-}
 section.image div.about {
-  background-color: #2947a9;
-  padding: 6%;
-  color: #eee;
+  left: 90%;
+  top: 15%;
   position: absolute;
+  background-color: #2947a9;
+  padding: 5% 3%;
+  height: 70%;
+  width: 40%;
+  color: #eee;
 }
 section.image div.about h3 {
   font-weight: 700;
-  margin-bottom: 3%;
-  font-size: 16px;
+  margin-bottom: 5%;
+  font-size: 1.5rem;
 }
 section.image div.about p {
-  font-size: 12px;
-  margin-bottom: 3%;
+  font-size: 0.8rem;
+  margin-bottom: 18%;
 }
 section.image div.about button {
   background-color: #eee;
   color: #2947a9;
-  padding: 2%;
+  padding: 3%;
   border: none;
   outline: none;
   border-radius: 3px;
+}
+
+@media (max-width: 900px) {
+  section.image {
+    width: 50%;
+    height: 28rem;
+  }
+  section.image div.about {
+    padding: 7% 5%;
+    width: 70%;
+    height: 70%;
+  }
+  section.image div.about p {
+    margin-bottom: 10%;
+  }
+}
+@media (max-width: 600px) {
+  section.image {
+    width: 90%;
+    margin: auto;
+    height: 20rem;
+  }
+  section.image div.about {
+    top: 100%;
+    left: 0;
+    padding: 7% 5%;
+    width: 100%;
+    height: auto;
+  }
+  section.image div.about p {
+    margin-bottom: 10%;
+  }
+}
+section.services {
+  background-color: #f6f8f7;
+  margin: 5% auto;
+  padding: 3%;
+}
+section.services h2 {
+  color: #292e3d;
+  text-align: center;
+  font-weight: 700;
+  padding-bottom: 3%;
+}
+section.services div.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  width: 50%;
+  gap: 3%;
+  margin: auto;
+}
+section.services div.container div.card:nth-of-type(even) {
+  background-color: #2947a9;
+  color: #eee;
+  text-align: center;
+  padding: 3%;
+  aspect-ratio: 4/3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20%;
+}
+section.services div.container div.card:nth-of-type(even) img {
+  width: 30px;
+  aspect-ratio: 1;
+}
+section.services div.container div.card:nth-of-type(even) img {
+  border-bottom: 1px solid #eee;
+}
+section.services div.container div.card:nth-of-type(odd) {
+  background-color: #eee;
+  color: #2947a9;
+  text-align: center;
+  padding: 3%;
+  aspect-ratio: 4/3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20%;
+}
+section.services div.container div.card:nth-of-type(odd) img {
+  width: 30px;
+  aspect-ratio: 1;
+}
+section.services div.container div.card:nth-of-type(odd) img {
+  border-bottom: 1px solid #eee;
+}
+
+@media (max-width: 1200px) {
+  section.services div.container {
+    width: 70%;
+  }
+}
+@media (max-width: 600px) {
+  section.services {
+    margin-top: 60%;
+  }
+  section.services div.container {
+    grid-template-columns: repeat(2, 1fr);
+    width: 80%;
+  }
+}
+@media (max-width: 520px) {
+  section.services {
+    margin-top: 80%;
+  }
+  section.services div.container {
+    grid-template-columns: repeat(2, 1fr);
+    width: 80%;
+  }
+}
+@media (max-width: 480px) {
+  section.services div.container {
+    grid-template-columns: repeat(1, 1fr);
+    width: 80%;
+  }
+  section.services div.container div.card img {
+    width: 80px !important;
+  }
+}
+@media (max-width: 350px) {
+  section.services {
+    margin-top: 90%;
+  }
+  section.services div.container {
+    grid-template-columns: repeat(1, 1fr);
+    width: 80%;
+  }
+}
+section.experience {
+  display: flex;
+  width: 90%;
+  margin: auto;
+}
+section.experience div.left {
+  width: 50%;
+}
+section.experience div.right {
+  width: 20%;
+}
+section.experience div.right h3 {
+  color: #2947a9;
+  font-weight: 700;
+  font-size: 2rem;
+}
+section.experience div.right p {
+  color: #525b7a;
+  margin: 6% 0;
+}
+section.experience div.right button {
+  background-color: #2947a9;
+  color: #eee;
+  padding: 3% 5%;
+  border: none;
+  outline: none;
 }
 
 /*# sourceMappingURL=index.css.map */

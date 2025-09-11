@@ -5,6 +5,9 @@
   padding: 0%;
   margin: 0;
   box-sizing: border-box;
+}
+
+body {
   font-family: "Work Sans", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
@@ -163,18 +166,18 @@ header {
     height: 30rem;
     flex-direction: column;
     h2 {
-        width: 80%;
-        margin: auto;
+      width: 80%;
+      margin: auto;
     }
-    div.popup{
-        width: 40%;
-        align-self: center;
-        h3{
-            padding: 3% 2%;
-        }
-        p{
-            padding: 1% 2%;
-        }
+    div.popup {
+      width: 40%;
+      align-self: center;
+      h3 {
+        padding: 3% 2%;
+      }
+      p {
+        padding: 1% 2%;
+      }
     }
   }
 }
@@ -182,18 +185,18 @@ header {
 @media (max-width: 678px) {
   header {
     height: 20rem;
-    h2{
-        font-size: 2.5rem;
+    h2 {
+      font-size: 2.5rem;
     }
-    div.popup{
-        width: 70%;
-        align-self: center;
-        h3{
-            padding: 3% 2%;
-        }
-        p{
-            padding: 1% 2%;
-        }
+    div.popup {
+      width: 70%;
+      align-self: center;
+      h3 {
+        padding: 3% 2%;
+      }
+      p {
+        padding: 1% 2%;
+      }
     }
   }
 }
@@ -262,37 +265,189 @@ section.reputation {
   }
 }
 
-
-
-
 section.image {
-  width: 95%;
-  margin: auto;
+  background: url(../../assests/Images/background/person.svg);
+  width: 60%;
+  height: 30rem;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  margin-left: 10%;
   position: relative;
-  img {
-    width: 100%;
-  }
   div.about {
-    background-color: $primary;
-    padding: 6%;
-    color: $w;
+    left: 90%;
+    top: 15%;
     position: absolute;
+    background-color: $primary;
+    padding: 5% 3%;
+    height: 70%;
+    width: 40%;
+    color: $w;
     h3 {
       font-weight: 700;
-      margin-bottom: 3%;
-      font-size: 16px;
+      margin-bottom: 5%;
+      font-size: 1.5rem;
     }
     p {
-      font-size: 12px;
-      margin-bottom: 3%;
+      font-size: 0.8rem;
+      margin-bottom: 18%;
     }
     button {
       background-color: $w;
       color: $primary;
-      padding: 2%;
+      padding: 3%;
       border: none;
       outline: none;
       border-radius: 3px;
     }
   }
+}
+
+@media (max-width: 900px) {
+  section.image {
+    width: 50%;
+    height: 28rem;
+    div.about {
+      padding: 7% 5%;
+      width: 70%;
+      height: 70%;
+      p {
+        margin-bottom: 10%;
+      }
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  section.image {
+    width: 90%;
+    margin: auto;
+    height: 20rem;
+    div.about {
+      top: 100%;
+      left: 0;
+      padding: 7% 5%;
+      width: 100%;
+      height: auto;
+      p {
+        margin-bottom: 10%;
+      }
+    }
+  }
+}
+
+section.services {
+  background-color: #f6f8f7;
+  margin: 5% auto;
+  padding: 3%;
+  h2 {
+    color: $text-color;
+    text-align: center;
+    font-weight: 700;
+    padding-bottom: 3%;
+  }
+  div.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    width: 50%;
+    gap: 3%;
+    margin: auto;
+    div.card:nth-of-type(even) {
+      background-color: $primary;
+      color: $w;
+      @include servicecard;
+      img {
+        border-bottom: 1px solid $w;
+      }
+    }
+    div.card:nth-of-type(odd) {
+      background-color: $w;
+      color: $primary;
+      @include servicecard;
+      img {
+        border-bottom: 1px solid $w;
+      }
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  section.services {
+    div.container {
+      width: 70%;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  section.services {
+    margin-top: 60%;
+    div.container {
+      grid-template-columns: repeat(2, 1fr);
+      width: 80%;
+    }
+  }
+}
+
+@media (max-width: 520px) {
+  section.services {
+    margin-top: 80%;
+    div.container {
+      grid-template-columns: repeat(2, 1fr);
+      width: 80%;
+    }
+  }
+}
+@media (max-width: 480px) {
+  section.services {
+    div.container {
+      grid-template-columns: repeat(1, 1fr);
+      width: 80%;
+      div.card {
+        img {
+          width: 80px !important;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 350px) {
+  section.services {
+    margin-top: 90%;
+    div.container {
+      grid-template-columns: repeat(1, 1fr);
+      width: 80%;
+    }
+  }
+}
+
+
+section.experience{
+    display: flex;
+    width: 90%;
+    margin: auto;
+    div.left{
+        width: 50%;
+    }
+    div.right{
+        width: 20%;
+        h3{
+            color: $primary;
+            font-weight: 700;
+            font-size: 2rem;
+        }
+        p{
+            color: #525b7a;
+            margin: 6% 0;
+        }
+        button{
+            background-color: $primary;
+            color: $w;
+            padding: 3% 5%;
+            border: none;
+            outline: none;
+        }
+    }
 }

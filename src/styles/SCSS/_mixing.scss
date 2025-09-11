@@ -1,0 +1,14 @@
+@mixin servicecard{
+    text-align: center;
+    padding: 3%;
+    aspect-ratio: 4/3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20%;
+    img{
+        width: 30px;
+        aspect-ratio: 1;
+    }
+}
