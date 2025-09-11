@@ -423,31 +423,107 @@ section.services {
   }
 }
 
-
-section.experience{
-    display: flex;
-    width: 90%;
+section.experience {
+  display: flex;
+  width: 90%;
+  div.left {
+    position: relative;
     margin: auto;
-    div.left{
-        width: 50%;
+    background-color: orange;
+    width: 40%;
+    div.card {
+      box-shadow: 1px 4px 4px #0000002b;
+      padding: 3%;
+      background-color: white;
+      width: 40%;
+      position: absolute;
+      h4 {
+        font-weight: 700;
+        font-size: 3rem;
+      }
+      p {
+        color: #667299;
+        border-left: 4px solid $btn-color;
+        padding-left: 2%;
+        margin-left: 5%;
+      }
     }
-    div.right{
-        width: 20%;
-        h3{
-            color: $primary;
-            font-weight: 700;
-            font-size: 2rem;
-        }
-        p{
-            color: #525b7a;
-            margin: 6% 0;
-        }
-        button{
-            background-color: $primary;
-            color: $w;
-            padding: 3% 5%;
-            border: none;
-            outline: none;
-        }
+    div.card:first-child {
+      align-self: flex-end;
+      right: -20%;
+      top: -10rem;
+      z-index: 10;
+      img {
+        position: absolute;
+        width: 70px;
+        left: 85%;
+        top: -30%;
+      }
     }
+    div.card:nth-child(2) {
+      align-self: center;
+      position: absolute;
+      right: 0;
+      top: -5rem;
+      z-index: 5;
+      img {
+        position: absolute;
+        width: 70px;
+        right: 85%;
+        top: -40%;
+      }
+    }
+    div.card:nth-child(3) {
+      align-self: center;
+      position: absolute;
+      right: -20%;
+      top: 1rem;
+      z-index: 10;
+      img {
+        position: absolute;
+        width: 70px;
+        left: 85%;
+        top: -30%;
+      }
+    }
+
+    div.card:nth-child(4) {
+      align-self: center;
+      position: absolute;
+      right: 0;
+      top: 5rem;
+      z-index: 5;
+      img {
+        position: absolute;
+        width: 70px;
+        left: 85%;
+        top: 60%;
+      }
+    }
+  }
+
+  div.right {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    margin: 5% auto;
+    justify-content: center;
+    h3 {
+      color: $primary;
+      font-weight: 700;
+      font-size: 2rem;
+    }
+    p {
+      color: #525b7a;
+      margin: 6% 0;
+    }
+    button {
+      background-color: $primary;
+      color: $w;
+      width: 50%;
+      padding: 3% 5%;
+      border: none;
+      outline: none;
+    }
+  }
 }

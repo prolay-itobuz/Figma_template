@@ -419,13 +419,87 @@ section.services div.container div.card:nth-of-type(odd) img {
 section.experience {
   display: flex;
   width: 90%;
-  margin: auto;
 }
 section.experience div.left {
-  width: 50%;
+  position: relative;
+  margin: auto;
+  background-color: orange;
+  width: 40%;
+}
+section.experience div.left div.card {
+  box-shadow: 1px 4px 4px rgba(0, 0, 0, 0.168627451);
+  padding: 3%;
+  background-color: white;
+  width: 40%;
+  position: absolute;
+}
+section.experience div.left div.card h4 {
+  font-weight: 700;
+  font-size: 3rem;
+}
+section.experience div.left div.card p {
+  color: #667299;
+  border-left: 4px solid #f9995d;
+  padding-left: 2%;
+  margin-left: 5%;
+}
+section.experience div.left div.card:first-child {
+  align-self: flex-end;
+  right: -20%;
+  top: -10rem;
+  z-index: 10;
+}
+section.experience div.left div.card:first-child img {
+  position: absolute;
+  width: 70px;
+  left: 85%;
+  top: -30%;
+}
+section.experience div.left div.card:nth-child(2) {
+  align-self: center;
+  position: absolute;
+  right: 0;
+  top: -5rem;
+  z-index: 5;
+}
+section.experience div.left div.card:nth-child(2) img {
+  position: absolute;
+  width: 70px;
+  right: 85%;
+  top: -40%;
+}
+section.experience div.left div.card:nth-child(3) {
+  align-self: center;
+  position: absolute;
+  right: -20%;
+  top: 1rem;
+  z-index: 10;
+}
+section.experience div.left div.card:nth-child(3) img {
+  position: absolute;
+  width: 70px;
+  left: 85%;
+  top: -30%;
+}
+section.experience div.left div.card:nth-child(4) {
+  align-self: center;
+  position: absolute;
+  right: 0;
+  top: 5rem;
+  z-index: 5;
+}
+section.experience div.left div.card:nth-child(4) img {
+  position: absolute;
+  width: 70px;
+  left: 85%;
+  top: 60%;
 }
 section.experience div.right {
   width: 20%;
+  display: flex;
+  flex-direction: column;
+  margin: 5% auto;
+  justify-content: center;
 }
 section.experience div.right h3 {
   color: #2947a9;
@@ -439,6 +513,7 @@ section.experience div.right p {
 section.experience div.right button {
   background-color: #2947a9;
   color: #eee;
+  width: 50%;
   padding: 3% 5%;
   border: none;
   outline: none;
