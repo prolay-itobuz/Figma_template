@@ -769,6 +769,7 @@ section.project {
       div.buttons {
         display: flex;
         justify-content: center;
+        margin-bottom: 50px;
         button {
           width: 295px;
           font-size: 18px;
@@ -871,6 +872,69 @@ section.project {
           }
         }
       }
+    }
+  }
+}
+
+
+section.contact{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 60px 0;
+  background-color: #F6F8F7;
+  text-align: center;
+  h3{
+    color: $text-color;
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  p{
+    font-size: 20px;
+    color:$text-color;
+    margin-bottom: 38px;
+  }
+  form{
+    width: 592px;
+    margin: auto;
+    div.row{
+      width: 592px;
+      display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+      input,select{
+        padding: 10px;
+        width: 280px;
+        border: 1px solid #E0E3EB;
+        option{
+          color: #A3AAC2;
+        }
+      }
+    }
+    div.row:first-child{
+      margin-bottom: 20px;
+    }
+    textarea{
+      width: 100%;
+      margin-top: 20px;
+      height: 135px;
+      padding: 10px;
+      border: 1px solid #E0E3EB;
+    }
+    span{
+      text-align: left;
+      width: 100%;
+      display: inline-block;
+      color: #667299;
+    }
+    button{
+      background-color: $primary;
+      padding: 16px;
+      border: none;
+      color: $w;
+      width: 271px;
+      font-size: 18px;
+      margin-top: 28px;
     }
   }
 }

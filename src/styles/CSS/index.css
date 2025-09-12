@@ -757,6 +757,7 @@ section.project div.partition div.parts div.images div.project-card:nth-child(4)
 section.project div.partition div.parts div.buttons {
   display: flex;
   justify-content: center;
+  margin-bottom: 50px;
 }
 section.project div.partition div.parts div.buttons button {
   width: 295px;
@@ -836,6 +837,67 @@ section.project div.partition div.parts div.buttons div.dots span:first-child {
   section.project div.partition div.parts div.images div.project-card {
     aspect-ratio: unset;
   }
+}
+section.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 60px 0;
+  background-color: #F6F8F7;
+  text-align: center;
+}
+section.contact h3 {
+  color: #292e3d;
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+section.contact p {
+  font-size: 20px;
+  color: #292e3d;
+  margin-bottom: 38px;
+}
+section.contact form {
+  width: 592px;
+  margin: auto;
+}
+section.contact form div.row {
+  width: 592px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+section.contact form div.row input, section.contact form div.row select {
+  padding: 10px;
+  width: 280px;
+  border: 1px solid #E0E3EB;
+}
+section.contact form div.row input option, section.contact form div.row select option {
+  color: #A3AAC2;
+}
+section.contact form div.row:first-child {
+  margin-bottom: 20px;
+}
+section.contact form textarea {
+  width: 100%;
+  margin-top: 20px;
+  height: 135px;
+  padding: 10px;
+  border: 1px solid #E0E3EB;
+}
+section.contact form span {
+  text-align: left;
+  width: 100%;
+  display: inline-block;
+  color: #667299;
+}
+section.contact form button {
+  background-color: #2947a9;
+  padding: 16px;
+  border: none;
+  color: #eee;
+  width: 271px;
+  font-size: 18px;
+  margin-top: 28px;
 }
 
 /*# sourceMappingURL=index.css.map */
