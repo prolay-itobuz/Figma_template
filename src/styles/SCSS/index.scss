@@ -279,7 +279,7 @@ section.image {
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
-  margin-left: 10%;
+  margin-left: 20%;
   position: relative;
   div.about {
     left: 726px;
@@ -311,6 +311,18 @@ section.image {
       border-radius: 3px;
     }
   }
+}
+
+@media(max-width: 1600px){
+section.image {
+  margin-left: 15%;
+}
+}
+
+@media(max-width: 1440px){
+section.image {
+  margin-left: 10%;
+}
 }
 @media (max-width: 1360px) {
   section.image {
@@ -479,37 +491,40 @@ section.services {
 
 section.experience {
   display: flex;
-  width: 90%;
+  width: 70%;
+  margin: auto;
   div.left {
     position: relative;
     margin: auto;
     background-color: orange;
-    width: 40%;
+    width: 30%;
     div.card {
       box-shadow: 1px 4px 4px #0000002b;
-      padding: 3%;
+      padding: 30px;
       background-color: white;
-      width: 230px;
+      width: 361px;
+      height: 155px;
       position: absolute;
       h4 {
         font-weight: 700;
-        font-size: 3rem;
+        font-size: 72px;
       }
       p {
         color: #667299;
         border-left: 4px solid $btn-color;
         padding-left: 2%;
         margin-left: 5%;
+        font-size: 16px;
       }
     }
     div.card:first-child {
       align-self: flex-end;
       right: -20%;
-      top: -10rem;
+      top: -18rem;
       z-index: 10;
       img {
         position: absolute;
-        width: 70px;
+        width: 92px;
         left: 85%;
         top: -30%;
       }
@@ -517,12 +532,12 @@ section.experience {
     div.card:nth-child(2) {
       align-self: center;
       position: absolute;
-      right: 0;
-      top: -5rem;
+      right: 20%;
+      top: -10rem;
       z-index: 5;
       img {
         position: absolute;
-        width: 70px;
+        width: 92px;
         right: 85%;
         top: -40%;
       }
@@ -531,11 +546,11 @@ section.experience {
       align-self: center;
       position: absolute;
       right: -20%;
-      top: 1rem;
+      top: -1rem;
       z-index: 10;
       img {
         position: absolute;
-        width: 70px;
+        width: 92px;
         left: 85%;
         top: -30%;
       }
@@ -544,12 +559,12 @@ section.experience {
     div.card:nth-child(4) {
       align-self: center;
       position: absolute;
-      right: 0;
+      right: 20%;
       top: 5rem;
       z-index: 5;
       img {
         position: absolute;
-        width: 70px;
+        width: 92px;
         left: 85%;
         top: 60%;
       }
@@ -557,7 +572,7 @@ section.experience {
   }
 
   div.right {
-    width: 20%;
+    width: 30%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -565,6 +580,8 @@ section.experience {
       color: $primary;
       font-weight: 700;
       font-size: 60px;
+      margin-top: 122px;
+      padding-top: 0;
     }
     p {
       color: #525b7a;
@@ -578,117 +595,49 @@ section.experience {
       width: 176px;
       font-size: 18px;
       padding: 16px 39px;
+      margin-bottom: 127px;
       border: none;
       outline: none;
     }
   }
 }
 
-@media (max-width: 1100px) {
+@media (max-width: 1450px) {
   section.experience {
     width: 100%;
     div.left {
       div.card:nth-child(2) {
-        right: 2rem;
-        top: -5rem;
+      right: 15%;
+      top: -10rem;
       }
       div.card:nth-child(4) {
-        right: 2rem;
-        top: 5rem;
+        right: 15%;
+        top: 6rem;
       }
     }
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
   section.experience {
     flex-direction: column;
     div.left {
-      margin: 12rem 0;
-      transform: translate(60%);
-      div.card {
-        h4 {
-          font-size: 2rem;
-          margin-left: 8%;
-        }
+      display: none;
+    }
+    div.right {
+      margin: auto;
+      width: 80%;
+      h3{
+        font-size: 40px;
+        margin: 0;
+      }
+      button{
+        margin: 0 0;
       }
     }
-    div.right {
-      margin-top: 5rem;
-      width: 80%;
-    }
   }
 }
 
-@media (max-width: 480px) {
-  section.experience {
-    flex-direction: column;
-    div.left {
-      margin: 12rem 0;
-      transform: translate(80%);
-    }
-    div.right {
-      margin-top: 5rem;
-      width: 80%;
-    }
-  }
-}
-
-@media (max-width: 435px) {
-  section.experience {
-    flex-direction: column;
-    div.left {
-      margin: 12rem 0;
-      transform: translate(90%);
-    }
-    div.right {
-      margin-top: 5rem;
-      width: 80%;
-    }
-  }
-}
-
-@media (max-width: 410px) {
-  section.experience {
-    flex-direction: column;
-    div.left {
-      margin: 12rem 0;
-      transform: translate(95%);
-      div.card {
-        width: 200px;
-        padding: 3%;
-        img {
-          width: 50px !important;
-        }
-      }
-    }
-    div.right {
-      margin-top: 1rem;
-      width: 80%;
-    }
-  }
-}
-
-@media (max-width: 390px) {
-  section.experience {
-    flex-direction: column;
-    div.left {
-      margin: 12rem 0;
-      transform: translate(100%);
-      div.card {
-        width: 200px;
-        padding: 3%;
-        img {
-          width: 50px !important;
-        }
-      }
-    }
-    div.right {
-      margin-top: 3rem;
-      width: 80%;
-    }
-  }
-}
 
 section.consult {
   margin-top: 5rem;
@@ -744,8 +693,8 @@ section.consult {
 
 section.project {
   width: 90%;
-  margin: auto;
-  margin-top: 3rem;
+  margin: 3rem auto;
+
   h2 {
     color: $text-color;
     margin-bottom: 40px;
