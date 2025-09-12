@@ -472,19 +472,9 @@ section.services div.container div.card:nth-of-type(odd) img {
   }
   section.services div.container {
     grid-template-columns: repeat(1, 1fr);
-    width: 80%;
   }
   section.services div.container div.card img {
     width: 80px !important;
-  }
-}
-@media (max-width: 350px) {
-  section.services {
-    margin-top: 90%;
-  }
-  section.services div.container {
-    grid-template-columns: repeat(1, 1fr);
-    width: 80%;
   }
 }
 section.experience {
@@ -569,23 +559,25 @@ section.experience div.right {
   width: 20%;
   display: flex;
   flex-direction: column;
-  margin: 5% auto;
   justify-content: center;
 }
 section.experience div.right h3 {
   color: #2947a9;
   font-weight: 700;
-  font-size: 2rem;
+  font-size: 60px;
 }
 section.experience div.right p {
   color: #525b7a;
-  margin: 6% 0;
+  margin: 40px 0px 67px 0;
+  font-size: 20px;
+  font-weight: 400px;
 }
 section.experience div.right button {
   background-color: #2947a9;
   color: #eee;
-  width: 50%;
-  padding: 3% 5%;
+  width: 176px;
+  font-size: 18px;
+  padding: 16px 39px;
   border: none;
   outline: none;
 }

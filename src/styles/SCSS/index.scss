@@ -467,7 +467,6 @@ section.services {
       padding: 10%;
     div.container {
       grid-template-columns: repeat(1, 1fr);
-      width: 80%;
       div.card {
         img {
           width: 80px !important;
@@ -477,15 +476,6 @@ section.services {
   }
 }
 
-@media (max-width: 350px) {
-  section.services {
-    margin-top: 90%;
-    div.container {
-      grid-template-columns: repeat(1, 1fr);
-      width: 80%;
-    }
-  }
-}
 
 section.experience {
   display: flex;
@@ -570,22 +560,24 @@ section.experience {
     width: 20%;
     display: flex;
     flex-direction: column;
-    margin: 5% auto;
     justify-content: center;
     h3 {
       color: $primary;
       font-weight: 700;
-      font-size: 2rem;
+      font-size: 60px;
     }
     p {
       color: #525b7a;
-      margin: 6% 0;
+      margin: 40px 0px 67px 0;
+      font-size: 20px;
+      font-weight: 400px;
     }
     button {
       background-color: $primary;
       color: $w;
-      width: 50%;
-      padding: 3% 5%;
+      width: 176px;
+      font-size: 18px;
+      padding: 16px 39px;
       border: none;
       outline: none;
     }
