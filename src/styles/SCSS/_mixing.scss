@@ -24,3 +24,9 @@
   background-position: center center;
   background-size:contain;
 }
+
+
+@mixin star{
+  color: red;
+  position: absolute;
+}
