@@ -1059,5 +1059,118 @@ section.contact form button {
     font-size: 14px;
   }
 }
+footer {
+  display: flex;
+  flex-direction: column;
+}
+footer div.top {
+  margin: 85px 112px;
+  margin-bottom: 79px;
+  display: flex;
+  justify-content: space-between;
+}
+footer div.top div.left {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+footer div.top div.left ul {
+  list-style: none;
+  display: flex;
+  gap: 13px;
+}
+footer div.top div.left ul li {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+footer div.top div.left ul li b {
+  font-weight: 500;
+  font-size: 20px;
+  color: #2947a9;
+  text-transform: uppercase;
+}
+footer div.top div.left ul li p {
+  color: #292e3d;
+  font-size: 20px;
+}
+footer div.top div.left span {
+  display: flex;
+  gap: 14px;
+  align-items: center;
+}
+footer div.top div.left span img {
+  width: 38px;
+}
+footer div.top div.left span h2 {
+  font-size: 30px;
+  color: #2947a9;
+}
+footer div.top div.right {
+  display: flex;
+  gap: 42px;
+  flex-direction: column;
+}
+footer div.top div.right div.newsletter {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+footer div.top div.right div.newsletter h3 {
+  font-weight: 500;
+  font-size: 20px;
+  color: #2947a9;
+  text-transform: uppercase;
+}
+footer div.top div.right div.newsletter span {
+  display: flex;
+  gap: 8px;
+}
+footer div.top div.right div.newsletter span input {
+  width: 280px;
+  padding: 10px 0;
+  padding-left: 8px;
+  border: 1px solid #E0E3EB;
+  border-radius: 4px;
+}
+footer div.top div.right div.newsletter span input::placeholder {
+  color: #A3AAC2;
+}
+footer div.top div.right div.newsletter span button {
+  background-color: #f9995d;
+  color: #eee;
+  font-size: 18px;
+  font-weight: 600;
+  width: 136px;
+  border: none;
+  border-radius: 4px;
+}
+footer div.top div.right div.social {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+footer div.top div.right div.social h3 {
+  font-weight: 500;
+  font-size: 20px;
+  color: #2947a9;
+  text-transform: uppercase;
+}
+footer div.top div.right div.social div.footerlink {
+  display: flex;
+  gap: 20px;
+}
+footer div.top div.right div.social div.footerlink a {
+  width: 40px;
+}
+footer div.bottom {
+  background-color: #2947a9;
+  padding: 25px 0;
+  padding-left: 112px;
+  color: #eee;
+}
+footer div.bottom p {
+  font-size: 16px;
+}
 
 /*# sourceMappingURL=index.css.map */
