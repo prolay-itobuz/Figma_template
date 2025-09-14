@@ -1,233 +1,282 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0,user-scalable=no"
-    />
-    <title>Figma Design Website</title>
-    <link rel="stylesheet" href="./src/styles/CSS/index.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-  </head>
-  <body>
-    <nav>
-      <div class="logo">
-        <img src="./src/assests/Images/icons/logo.svg" alt="logo" />
-        <h1><i>The</i>Box</h1>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no" />
+  <title>Figma Design Website</title>
+  <link rel="stylesheet" href="./src/styles/CSS/index.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+</head>
+
+<body>
+  <nav>
+    <div class="logo">
+      <img src="./src/assests/Images/icons/logo.svg" alt="logo" />
+      <h1><i>The</i>Box</h1>
+    </div>
+    <label for="menu"><i class="fa fa-bars"></i></label>
+    <input type="checkbox" name="" id="menu" />
+
+    <ul class="navlinks">
+      <li><a href="">Home</a></li>
+      <li><a href="">About Us</a></li>
+      <li><a href="">Projects</a></li>
+      <li><a href="">Services</a></li>
+      <li><a href="">Contact Us</a></li>
+    </ul>
+  </nav>
+
+  <header>
+    <h2>Building things is our mission.</h2>
+    <div class="popup">
+      <h3>Feature Projects</h3>
+      <p>The National University of Architecture</p>
+      <div class="buttons">
+        <button><i class="fa fa-arrow-left button"></i>Back</button>
+        <button>Next <i class="fa fa-arrow-right button"></i></button>
       </div>
-      <label for="menu"><i class="fa fa-bars"></i></label>
-      <input type="checkbox" name="" id="menu" />
+    </div>
+  </header>
 
-      <ul class="navlinks">
-        <li>Home</li>
-        <li>About Us</li>
-        <li>Projects</li>
-        <li>Services</li>
-        <li>Contact Us</li>
+  <section class="reputation">
+    <h2>Our Reputation</h2>
+    <div class="container">
+      <div class="card">
+        <img src="./src/assests/Images/icons/headphone.svg" alt="" />
+        <h3>Best Services</h3>
+        <p>Nullam senectus porttitor in eget. Eget rutrum leo interdum.</p>
+      </div>
+      <div class="card">
+        <img src="./src/assests/Images/icons/headphone.svg" alt="" />
+        <h3>Best Teams</h3>
+        <p>Cursus semper tellus volutpat aliquet lacus.</p>
+      </div>
+      <div class="card">
+        <img src="./src/assests/Images/icons/tools.svg" alt="" />
+        <h3>Best Designs</h3>
+        <p>Ultricies at ipsum nunc, tristique nam lectus.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="image">
+    <div class="about">
+      <h3>About Us</h3>
+      <p>
+        For more than 30 years we have been delivering world-class
+        construction and we’ve built many lasting relationships along the way.
+        <br />
+        <br />We’ve matured into an industry leader and trusted resource for
+        those seeking quality, innovation and reliability when building in the
+        U.S.
+      </p>
+      <button>More on Our History</button>
+    </div>
+  </section>
+
+  <section class="services">
+    <h2>Services</h2>
+    <div class="container">
+      <div class="card">
+        <img src="./src/assests/Images/icons/construction.svg" alt="" />
+        <h3>Construction</h3>
+      </div>
+      <div class="card">
+        <img src="./src/assests/Images/icons/renovation.svg" alt="" />
+        <h3>Renovation</h3>
+      </div>
+      <div class="card">
+        <img src="./src/assests/Images/icons/consultation.svg" alt="" />
+        <h3>Consultation</h3>
+      </div>
+      <div class="card">
+        <img src="./src/assests/Images/icons/repair.svg" alt="" />
+        <h3>Repair Services</h3>
+      </div>
+      <div class="card">
+        <img src="./src/assests/Images/icons/architechture.svg" alt="" />
+        <h3>Architecture</h3>
+      </div>
+      <div class="card">
+        <img src="./src/assests/Images/icons/electric.svg" alt="" />
+        <h3>Electric</h3>
+      </div>
+    </div>
+  </section>
+
+  <section class="experience">
+    <div class="left">
+      <div class="card">
+        <img src="./src/assests/Images/icons/handshake.svg" alt="" />
+        <h4>84</h4>
+        <p>Happy Clients</p>
+      </div>
+      <div class="card">
+        <img src="./src/assests/Images/icons/pen.svg" alt="" />
+        <h4>123</h4>
+        <p>Projects Completed</p>
+      </div>
+
+      <div class="card">
+        <img src="./src/assests/Images/icons/trophy.svg" alt="" />
+        <h4>37</h4>
+        <p>Awards Win</p>
+      </div>
+      <div class="card">
+        <img src="./src/assests/Images/icons/last.svg" alt="" />
+        <h4>30</h4>
+        <p>Years in Business</p>
+      </div>
+    </div>
+    <div class="right">
+      <h3>30 Years Experience</h3>
+      <p>
+        Our company has been the leading provided construction services to
+        clients throughout the USA since 1988.
+      </p>
+      <button>Contact Us</button>
+    </div>
+  </section>
+
+  <section class="consult">
+    <div class="left">
+      <h3>Free consultation with exceptional quality</h3>
+      <p>Just one call away: <u>+84 1102 2703</u></p>
+    </div>
+    <div class="right">
+      <button>Get your consultation</button>
+    </div>
+  </section>
+
+  <section class="project">
+    <h2>Projects</h2>
+    <div class="partition">
+      <ul>
+        <li>All</li>
+        <li>Commercial</li>
+        <li>Residential</li>
+        <li>Other</li>
       </ul>
-    </nav>
-
-    <header>
-      <h2>Building things is our mission.</h2>
-      <div class="popup">
-        <h3>Feature Projects</h3>
-        <p>The National University of Architecture</p>
+      <div class="parts">
+        <div class="images">
+          <div class="project-card">
+            <div class="bar">
+              <h3>Wildstone Infra Hotel</h3>
+              <p>2715 Ash Dr. San Jose, South Dakota</p>
+            </div>
+          </div>
+          <div class="project-card">
+            <div class="bar">
+              <h3>Wish Stone Building</h3>
+              <p>2972 Westheimer Rd. Santa Ana, Illinois</p>
+            </div>
+          </div>
+          <div class="project-card">
+            <div class="bar">
+              <h3>Mr. Parkinston’s House</h3>
+              <p>3517 W. Gray St. Utica, Pennsylvania</p>
+            </div>
+          </div>
+          <div class="project-card">
+            <div class="bar">
+              <h3>Oregano Height</h3>
+              <p>2464 Royal Ln. Mesa, New Jersey</p>
+            </div>
+          </div>
+        </div>
         <div class="buttons">
-          <button><i class="fa fa-arrow-left button"></i>Back</button>
+          <button><i class="fa fa-arrow-left button"></i> Back</button>
+          <div class="dots">
+            <span></span><span></span><span></span><span></span><span></span>
+          </div>
           <button>Next <i class="fa fa-arrow-right button"></i></button>
         </div>
       </div>
-    </header>
+    </div>
+  </section>
 
-    <section class="reputation">
-      <h2>Our Reputation</h2>
-      <div class="container">
-        <div class="card">
-          <img src="./src/assests/Images/icons/headphone.svg" alt="" />
-          <h3>Best Services</h3>
-          <p>Nullam senectus porttitor in eget. Eget rutrum leo interdum.</p>
-        </div>
-        <div class="card">
-          <img src="./src/assests/Images/icons/headphone.svg" alt="" />
-          <h3>Best Teams</h3>
-          <p>Cursus semper tellus volutpat aliquet lacus.</p>
-        </div>
-        <div class="card">
-          <img src="./src/assests/Images/icons/tools.svg" alt="" />
-          <h3>Best Designs</h3>
-          <p>Ultricies at ipsum nunc, tristique nam lectus.</p>
-        </div>
+  <section class="contact">
+    <h3>What can us do for you?</h3>
+    <p>
+      We are ready to work on a project of any complexity,<br> whether it’s
+      commercial or residential.
+    </p>
+    <form action="">
+      <div class="row">
+        <input type="text" name="" id="" placeholder="Your Name" />
+        <div class="star1">*</div>
+        <input type="email" name="" id="" placeholder="Email" />
+        <div class="star2">*</div>
       </div>
-    </section>
-
-    <section class="image">
-      <div class="about">
-        <h3>About Us</h3>
-        <p>
-          For more than 30 years we have been delivering world-class
-          construction and we’ve built many lasting relationships along the way.
-          <br />
-          <br />We’ve matured into an industry leader and trusted resource for
-          those seeking quality, innovation and reliability when building in the
-          U.S.
-        </p>
-        <button>More on Our History</button>
+      <div class="row">
+        <select name="" id="">
+          <option value="">Reason for contacting</option>
+        </select>
+        <span class="down-arrow">&#9660;</span>
+        <div class="star3">*</div>
+        <input type="number" name="" id="" placeholder="Phone" />
       </div>
-    </section>
+      <textarea name="" id="" placeholder="Message"></textarea>
+      <span><i>*</i> indicates a required field</span>
+      <button>Submit</button>
+    </form>
+  </section>
 
-    <section class="services">
-      <h2>Services</h2>
-      <div class="container">
-        <div class="card">
-          <img src="./src/assests/Images/icons/construction.svg" alt="" />
-          <h3>Construction</h3>
-        </div>
-        <div class="card">
-          <img src="./src/assests/Images/icons/renovation.svg" alt="" />
-          <h3>Renovation</h3>
-        </div>
-        <div class="card">
-          <img src="./src/assests/Images/icons/consultation.svg" alt="" />
-          <h3>Consultation</h3>
-        </div>
-        <div class="card">
-          <img src="./src/assests/Images/icons/repair.svg" alt="" />
-          <h3>Repair Services</h3>
-        </div>
-        <div class="card">
-          <img src="./src/assests/Images/icons/architechture.svg" alt="" />
-          <h3>Architecture</h3>
-        </div>
-        <div class="card">
-          <img src="./src/assests/Images/icons/electric.svg" alt="" />
-          <h3>Electric</h3>
-        </div>
-      </div>
-    </section>
-
-    <section class="experience">
+  <footer>
+    <div class="top">
       <div class="left">
-        <div class="card">
-          <img src="./src/assests/Images/icons/handshake.svg" alt="" />
-          <h4>84</h4>
-          <p>Happy Clients</p>
-        </div>
-        <div class="card">
-          <img src="./src/assests/Images/icons/pen.svg" alt="" />
-          <h4>123</h4>
-          <p>Projects Completed</p>
-        </div>
 
-        <div class="card">
-          <img src="./src/assests/Images/icons/trophy.svg" alt="" />
-          <h4>37</h4>
-          <p>Awards Win</p>
-        </div>
-        <div class="card">
-          <img src="./src/assests/Images/icons/last.svg" alt="" />
-          <h4>30</h4>
-          <p>Years in Business</p>
-        </div>
-      </div>
-      <div class="right">
-        <h3>30 Years Experience</h3>
-        <p>
-          Our company has been the leading provided construction services to
-          clients throughout the USA since 1988.
-        </p>
-        <button>Contact Us</button>
-      </div>
-    </section>
-
-    <section class="consult">
-      <div class="left">
-        <h3>Free consultation with exceptional quality</h3>
-        <p>Just one call away: <u>+84 1102 2703</u></p>
-      </div>
-      <div class="right">
-        <button>Get your consultation</button>
-      </div>
-    </section>
-
-    <section class="project">
-      <h2>Projects</h2>
-      <div class="partition">
         <ul>
-          <li>All</li>
-          <li>Commercial</li>
-          <li>Residential</li>
-          <li>Other</li>
+          <li>
+            <b>Address:</b>
+            <b>Phone:</b>
+            <b>Email:</b>
+          </li>
+          <li>
+            <p>6391 Elgin St. Celina, Delaware 10299</p>
+            <p>+84 1102 2703</p>
+            <p>hello@thebox.com</p>
+          </li>
         </ul>
-        <div class="parts">
-          <div class="images">
-            <div class="project-card">
-              <div class="bar">
-                <h3>Wildstone Infra Hotel</h3>
-                <p>2715 Ash Dr. San Jose, South Dakota</p>
-              </div>
-            </div>
-            <div class="project-card">
-              <div class="bar">
-                <h3>Wish Stone Building</h3>
-                <p>2972 Westheimer Rd. Santa Ana, Illinois</p>
-              </div>
-            </div>
-            <div class="project-card">
-              <div class="bar">
-                <h3>Mr. Parkinston’s House</h3>
-                <p>3517 W. Gray St. Utica, Pennsylvania</p>
-              </div>
-            </div>
-            <div class="project-card">
-              <div class="bar">
-                <h3>Oregano Height</h3>
-                <p>2464 Royal Ln. Mesa, New Jersey</p>
-              </div>
-            </div>
-          </div>
-          <div class="buttons">
-            <button><i class="fa fa-arrow-left button"></i> Back</button>
-            <div class="dots">
-              <span></span><span></span><span></span><span></span><span></span>
-            </div>
-            <button>Next <i class="fa fa-arrow-right button"></i></button>
-          </div>
-        </div>
-      </div>
-    </section>
 
-    <section class="contact">
-      <h3>What can us do for you?</h3>
-      <p>
-        We are ready to work on a project of any complexity,<br> whether it’s
-        commercial or residential.
-      </p>
-      <form action="">
-        <div class="row">
-          <input type="text" name="" id="" placeholder="Your Name" />
-          <input type="email" name="" id="" placeholder="Email" />
+        <span>
+          <img src="./src/assests/Images/icons/logo.svg" alt="">
+          <h2><i>The</i>Box</h2>
+        </span>
+
+      </div>
+
+      <div class="right">
+
+        <div class="newsletter">
+          <h3>Newsletter:</h3>
+          <span>
+            <input type="Email" placeholder="Your email here">
+            <button>Subscribe</button>
+          </span>
         </div>
-        <div class="row">
-          <select name="" id="">
-            <option value="Select">Reason for contacting</option>
-          </select>
-          <input type="number" name="" id="" placeholder="Phone"/>
+
+        <div class="social">
+          <h3>Social:</h3>
+          <div class="footerlink">
+            <a href=""><img src="./src/assests/Images/icons/fb.svg" alt=""></a>
+            <a href=""><img src="./src/assests/Images/icons/linkedin.svg" alt=""></a>
+            <a href=""><img src="./src/assests/Images/icons/Twitter.svg" alt=""></a>
+          </div>
         </div>
-        <textarea name="" id="" placeholder="Message"></textarea>
-        <span>* indicates a required field</span>
-        <button>Submit</button>
-      </form>
-    </section>
-  </body>
+
+      </div>
+    </div>
+    <div class="bottom">
+      <p>TheBox Company &copy; 2022. All Rights Reserved</p>
+    </div>
+  </footer>
+</body>
+
 </html>

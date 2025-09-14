@@ -11,6 +11,7 @@
   justify-content: center;
   align-items: center;
   gap: 20px;
+
   img {
     box-sizing: content-box;
     width: 40px;
@@ -19,8 +20,22 @@
   }
 }
 
-@mixin image{
+@mixin image {
   background-repeat: no-repeat;
   background-position: center center;
-  background-size:contain;
+  background-size: contain;
+}
+
+
+@mixin star {
+  color: red;
+  position: absolute;
+}
+
+
+@mixin footer-Heading {
+  font-weight: 500;
+  font-size: 20px;
+  color: $primary;
+  text-transform: uppercase;
 }
