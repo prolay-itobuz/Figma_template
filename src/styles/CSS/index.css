@@ -1067,6 +1067,7 @@ footer div.top {
   margin: 85px 112px;
   margin-bottom: 79px;
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
 }
 footer div.top div.left {
@@ -1171,6 +1172,24 @@ footer div.bottom {
 }
 footer div.bottom p {
   font-size: 16px;
+}
+
+@media (max-width: 1150px) {
+  footer div.top {
+    flex-direction: column !important;
+  }
+  footer div.top div.left {
+    margin-bottom: 10%;
+  }
+  footer div.top div.left ul li:last-child {
+    width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  footer div.top {
+    margin: 2%;
+    margin-left: 5%;
+  }
 }
 
 /*# sourceMappingURL=index.css.map */
