@@ -1263,6 +1263,7 @@ footer{
     margin: 85px 112px;
     margin-bottom: 79px;
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     div.left{
       display: flex;
@@ -1366,3 +1367,27 @@ footer{
   }
 }
 
+@media(max-width:1150px){
+  footer{
+    div.top{
+      flex-direction: column !important;
+      div.left{
+        margin-bottom: 10%;
+        ul{
+          li:last-child{
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media(max-width:768px){
+  footer{
+    div.top{
+      margin: 2%;
+      margin-left: 5%;
+    }
+  }
+}
